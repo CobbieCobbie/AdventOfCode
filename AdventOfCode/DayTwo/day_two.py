@@ -9,6 +9,8 @@ def main():
         numbers_int = [int(i) for i in numbers]
         if safeness_check(numbers_int):
             safeness_counter += 1
+        elif correctable(numbers_int):
+            safeness_counter += 1
     print(f"Number of lines: {line_counter}")
     print(f"Number of safe lines: {safeness_counter}")
 
@@ -43,6 +45,16 @@ def isDecreasing(list):
         if list[i] <= list[i+1]:
             return False
     return True
+
+
+def correctable(input):
+    for i in range(len(input)):
+        temp = input.copy()
+        temp.pop(i)
+        print(temp)
+        if safeness_check(temp):
+            return True
+    return False
 
 
 if __name__ == "__main__":
