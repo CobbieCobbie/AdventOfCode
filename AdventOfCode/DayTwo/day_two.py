@@ -51,7 +51,6 @@ def correctable(input):
     for i in range(len(input)):
         temp = input.copy()
         temp.pop(i)
-        print(temp)
         if safeness_check(temp):
             return True
     return False
