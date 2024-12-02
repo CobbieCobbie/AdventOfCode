@@ -2,9 +2,9 @@ import unittest
 
 import AdventOfCode.DayOne.day_one as day_one
 
-class DayOne(unittest.TestCase):
+class TestDayOne(unittest.TestCase):
     
-    def day_one(self):
+    def test_day_one(self):
         
         self.assertEqual(day_one.compare(3,4),1)
         self.assertEqual(day_one.compare(1,1),0)
