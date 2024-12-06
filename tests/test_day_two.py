@@ -1,6 +1,6 @@
 import unittest
 
-import AdventOfCode.DayTwo.day_two as day_two
+import AdventOfCode.B_DayTwo.day_two as day_two
 
 class TestDayTwo(unittest.TestCase):
 
